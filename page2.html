@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src='cordova.js'></script>
+</head>
+
+<body>
+<h1>Select Communication Channel</h1>
+<ul>
+  <li><a id='BluetoothLink' href="page3.html">Bluetooth</a></li>
+  <li><a  id='InternetLink' href="#">Internet</a></li>
+  <li><a id='QrcodeLink'  href="#">QR Code</a> (Not Implemented)</li>
+  <li><a  id='NfcLink' href="#">NFC</a></li>
+</ul>
+<script>
+	
+	document.getElementById('BluetoothLink').href += '?id=' + id;
+	document.getElementById('InternetLink').href += '?id=' + id;
+	document.getElementById('QrcodeLink').href += '?id=' + id;
+	document.getElementById('NfcLink').href += '?id=' + id;
+</script>
+</body>
+</html>
